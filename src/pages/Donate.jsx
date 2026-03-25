@@ -38,7 +38,7 @@ const impactItems = [
   { amount: '₹2,500',  impact: 'Feeds 50 individuals through our Annadanam program for a day' },
   { amount: '₹5,000',  impact: 'Sponsors a full medical camp in a remote village' },
   { amount: '₹10,000', impact: 'Supports one elderly resident with full care for an entire month' },
-  { amount: '₹25,000', impact: 'Funds a complete scholarship for a student for one academic year' },
+  { amount: '₹25,000', impact: 'Funds comprehensive social welfare activities for a village for an entire month' },
 ];
 
 function CopyButton({ text }) {

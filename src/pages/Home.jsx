@@ -26,7 +26,7 @@ const programs = [
   {
     icon: '📚',
     title: 'Rural Education',
-    desc: 'Bridging the educational divide in rural communities. We run free tuition centres, scholarship programs, and provide books, uniforms, and stationery to children who need it most.',
+    desc: 'Bridging the educational divide in rural communities. We run free tuition centres, organize social welfare activities, and provide books, uniforms, and stationery to children who need it most.',
   },
   {
     icon: '🩺',
@@ -64,7 +64,7 @@ const testimonials = [
   {
     name: 'Sunitha Rao',
     role: 'Parent of Scholar',
-    text: 'My daughter received a scholarship from the Trust and is now pursuing engineering. Without their support, her dreams would have remained just dreams. We are eternally grateful.',
+    text: 'Our community received vital social welfare support from the Trust during tough times. Without their ongoing help, our families would have struggled greatly. We are eternally grateful.',
   },
 ];
 

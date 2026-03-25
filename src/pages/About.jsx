@@ -4,8 +4,8 @@ import { FiArrowRight, FiTarget, FiEye, FiHeart } from 'react-icons/fi';
 import './About.css';
 
 const ABOUT_HERO = 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1600&q=80';
-const FOUNDER_IMG = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80';
-const TEAM_IMG1   = 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80';
+const FOUNDER_IMG = '/assets/images/s-radha.jpg';
+const TEAM_IMG1   = '/assets/images/manu.jpg';
 const TEAM_IMG2   = 'https://images.unsplash.com/photo-1619895862022-09114b41f16f?w=400&q=80';
 const TEAM_IMG3   = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80';
 const STORY_IMG   = 'https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?w=800&q=80';
@@ -18,19 +18,20 @@ const values = [
 ];
 
 const team = [
-  { name: 'Sri [Founder Name]', role: 'Founder & Managing Trustee', img: FOUNDER_IMG, bio: 'Inspired by the teachings of Sri Venkateswara, the Founder established this Trust with a simple vision: that no elderly soul should suffer alone. For over a decade, their unwavering commitment has built an institution of love.' },
-  { name: 'Smt. [Trustee Name]', role: 'Secretary & Programme Director', img: TEAM_IMG1, bio: 'A dedicated social worker with 12+ years of grassroots experience, she oversees all programme execution — from ashram operations to rural outreach initiatives with meticulous care.' },
+  { name: 'S. Radha', role: 'President & Founder', img: FOUNDER_IMG, bio: 'Driven by profound empathy, S. Radha founded the Trust after witnessing the plight of the marginalized. Her deep concern translated into direct action, establishing a sanctuary for the elderly and educational programs for rural youth. Her compassionate leadership remains the guiding force behind every initiative.' },
+  { name: 'Manu', role: 'Secretary & Programme Director', img: TEAM_IMG1, bio: "With exceptional dedication to grassroots community building, Manu spearheads the Trust's operational initiatives. As Secretary and Programme Director, he transforms visionary ideas into on-the-ground reality, tirelessly organizing education programs, medical camps, and ashram operations. His hands-on leadership ensures help reaches the most vulnerable efficiently." },
   { name: 'Sri [Trustee Name]', role: 'Treasurer & Finance Head', img: TEAM_IMG2, bio: 'A chartered professional who ensures every rupee donated reaches those it is meant for. His financial stewardship has earned the Trust the trust of hundreds of donors nationwide.' },
   { name: 'Dr. [Name]', role: 'Medical Advisor', img: TEAM_IMG3, bio: 'A retired physician who volunteers his expertise to our health camps and ashram residents. His guidance ensures the highest standard of medical care for our elderly community.' },
 ];
 
 const milestones = [
-  { year: '2009', title: 'Foundation Laid', desc: 'The Trust was registered with a small ashram housing 12 elderly individuals, run entirely by volunteers.' },
-  { year: '2012', title: 'First School Camp', desc: 'We launched our first rural education drive, distributing books and providing free tuition to 80+ village children.' },
-  { year: '2015', title: 'Expanded to 3 Centres', desc: 'A second ashram was inaugurated, doubling our capacity to serve the elderly across the region.' },
-  { year: '2018', title: 'Medical Outreach Begins', desc: 'Partnership with local hospitals enabled us to hold monthly free medical camps in 5 villages.' },
-  { year: '2021', title: 'Scholarship Program Launch', desc: 'We awarded our first 50 scholarships to meritorious students from economically weaker backgrounds.' },
-  { year: '2024', title: 'Serving 500+ Lives', desc: 'Today, the Trust proudly serves over 500 beneficiaries across all programmes — a milestone built on faith and generosity.' },
+  { year: '2014', title: 'Foundation by S. Radha', desc: 'S. Radha founded the Trust to provide a loving sanctuary and care for the forgotten elderly and marginalized.' },
+  { year: '2016', title: 'Rural Education Initiative', desc: 'Launched comprehensive education drives, distributing books and providing free tuition to hundreds of village children.' },
+  { year: '2018', title: 'Medical Outreach Programs', desc: 'Partnered with regional hospitals to establish monthly free medical camps, bringing healthcare to remote areas.' },
+  { year: '2019', title: 'Empowering 10,000+ Women', desc: 'Achieved a massive milestone by putting 10,000+ women through our skill development program, teaching them tailoring for financial independence.' },
+  { year: '2021', title: 'Social Welfare Programs Expanded', desc: 'Awarded large-scale social welfare support to distressed communities, funding their essential needs and creating sustainable livelihoods.' },
+  { year: '2024', title: 'Serving 500+ Elderly Lives', desc: 'Successfully expanded our ashram facilities across multiple centres, providing dignified housing, nourishing food, and care to over 500 elderly residents.' },
+  { year: '2026', title: 'A Legacy of Ongoing Seva', desc: 'Continuing our expansive mission, reaching new heights in women empowerment, elder care, and daily Annadanam (free meal) services for thousands.' },
 ];
 
 export default function About() {
@@ -83,7 +84,7 @@ export default function About() {
               That encounter became a calling. Within months, a modest rented space was converted into the Trust's first ashram — a home for twelve elderly individuals. Word spread quietly through the community, and with it came volunteers, donations, and an ever-growing family of those who believed that love, when organised, can transform lives.
             </p>
             <p style={{ marginTop: '1rem' }}>
-              Today, what began as a single rented room has grown into a network of three ashram centres, multiple educational outreach programs, regular medical camps, and a scholarship initiative that has changed the trajectories of hundreds of young lives. The spirit, however, remains exactly as it was on day one: humble, human, and rooted in love.
+              Today, what began as a single rented room has grown into a network of three ashram centres, multiple educational outreach programs, regular medical camps, and expansive social welfare activities that have changed the trajectories of hundreds of young lives. The spirit, however, remains exactly as it was on day one: humble, human, and rooted in love.
             </p>
           </div>
           <div className="story-img-wrap">

@@ -23,7 +23,7 @@ export default function Footer() {
               Rooted in compassion, guided by dharma — we walk alongside the elderly, the forgotten, and the vulnerable, offering shelter, dignity, and care.
             </p>
             <p className="footer-reg">
-              Registered Trust · Est. [Year] · Reg. No. [XXXXX]
+              Registered Trust · Est. 2014 · Reg. No. HSK-4-00519-2013-14
             </p>
           </div>
 
@@ -62,7 +62,9 @@ export default function Footer() {
               </li>
               <li>
                 <FiPhone size={15} />
-                <a href="tel:+910000000000">+91 00000 00000</a>
+                <a href="tel:+918553182800">+91 85531 82800</a>
+                <span> / </span>
+                <a href="tel:+918971379711">+91 89713 79711</a>
               </li>
               <li>
                 <FiMail size={15} />

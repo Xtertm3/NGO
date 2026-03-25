@@ -13,117 +13,77 @@ import './Gallery.css';
 const galleryImages = [
   {
     id: 1,
-    src:    '/assets/images/media__1774419441217.jpg',
-    thumb:  '/assets/images/media__1774419441217.jpg',
-    title:  'Ashram Morning Prayers',
-    category: 'Ashram Life',
-    caption: 'Residents and volunteers gather each morning for prayers — a sacred moment of gratitude and peace.',
+    src:    '/assets/images/media__1774422201479.jpg',
+    thumb:  '/assets/images/media__1774422201479.jpg',
+    title:  'Medical Treatment & Care',
+    caption: 'Providing essential medical care and treatment for severe wounds and illnesses.',
   },
   {
     id: 2,
-    src:    '/assets/images/media__1774419441362.jpg',
-    thumb:  '/assets/images/media__1774419441362.jpg',
-    title:  'Elderly Care & Companionship',
-    category: 'Ashram Life',
-    caption: 'Our dedicated caregivers ensure every resident receives warm, personalised attention each day.',
+    src:    '/assets/images/media__1774422201979.jpg',
+    thumb:  '/assets/images/media__1774422201979.jpg',
+    title:  'Moments of Peace',
+    caption: 'An elderly resident offering heartfelt prayers and gratitude at the ashram.',
   },
   {
     id: 3,
-    src:    '/assets/images/media__1774419441476.jpg',
-    thumb:  '/assets/images/media__1774419441476.jpg',
-    title:  'Rural Education Drive',
-    category: 'Education',
-    caption: 'Free tuition classes conducted in a village school — where every child deserves a bright future.',
+    src:    '/assets/images/media__1774422201905.jpg',
+    thumb:  '/assets/images/media__1774422201905.jpg',
+    title:  'Community Gatherings',
+    caption: 'Empowering communities through awareness camps and self-help group meetings.',
   },
   {
     id: 4,
-    src:    '/assets/images/media__1774419441495.jpg',
-    thumb:  '/assets/images/media__1774419441495.jpg',
-    title:  'Medical Camp',
-    category: 'Medical Outreach',
-    caption: 'Our monthly health camps bring doctors and medicines directly to remote villages.',
+    src:    '/assets/images/media__1774422201734.jpg',
+    thumb:  '/assets/images/media__1774422201734.jpg',
+    title:  'Annadanam (Free Meals)',
+    caption: 'Serving nutritious traditional meals on banana leaves to hundreds of people.',
   },
   {
     id: 5,
-    src:    '/assets/images/media__1774419441217.jpg',
-    thumb:  '/assets/images/media__1774419441217.jpg',
-    title:  'Annadanam — Free Meals',
-    category: 'Community Service',
-    caption: 'Hundreds are served a warm, nutritious meal daily. Hunger has no place in our community.',
+    src:    '/assets/images/media__1774422201902.jpg',
+    thumb:  '/assets/images/media__1774422201902.jpg',
+    title:  'Honouring Leadership',
+    caption: 'Our beloved Founder and President, S. Radha, being warmly felicitated for her profound dedication.',
   },
   {
     id: 6,
-    src:    '/assets/images/media__1774419441362.jpg',
-    thumb:  '/assets/images/media__1774419441362.jpg',
-    title:  'Women\'s Self-Help Group',
-    category: 'Community Service',
-    caption: 'Empowering rural women through skill development, microfinance, and community support groups.',
+    src:    '/assets/images/media__1774419441217.jpg',
+    thumb:  '/assets/images/media__1774419441217.jpg',
+    title:  'Compassionate Assistance',
+    caption: 'Our caregivers provide gentle, hands-on assistance to residents in their daily routines.',
   },
   {
     id: 7,
-    src:    '/assets/images/media__1774419441476.jpg',
-    thumb:  '/assets/images/media__1774419441476.jpg',
-    title:  'Scholarship Award Ceremony',
-    category: 'Education',
-    caption: 'Bright students from rural communities are felicitated at our annual scholarship ceremony.',
+    src:    '/assets/images/media__1774419441362.jpg',
+    thumb:  '/assets/images/media__1774419441362.jpg',
+    title:  'Feeding with Love',
+    caption: 'Dedicated volunteers feeding bedridden elders with immense patience and care.',
   },
   {
     id: 8,
-    src:    '/assets/images/media__1774419441495.jpg',
-    thumb:  '/assets/images/media__1774419441495.jpg',
-    title:  'Festival Celebrations',
-    category: 'Ashram Life',
-    caption: 'Festivals are celebrated with great joy at the ashram — bringing colour, music, and warmth to all.',
+    src:    '/assets/images/media__1774419441476.jpg',
+    thumb:  '/assets/images/media__1774419441476.jpg',
+    title:  'Blessings from Residents',
+    caption: 'The warm smiles and heartfelt blessings from our ashram family make all efforts worthwhile.',
   },
   {
     id: 9,
-    src:    '/assets/images/media__1774419441217.jpg',
-    thumb:  '/assets/images/media__1774419441217.jpg',
-    title:  'Volunteer Camp',
-    category: 'Volunteers',
-    caption: 'Young volunteers spend their weekends at the ashram, playing, reading, and spending time with the elders.',
-  },
-  {
-    id: 10,
-    src:    '/assets/images/media__1774419441362.jpg',
-    thumb:  '/assets/images/media__1774419441362.jpg',
-    title:  'Children\'s Learning Centre',
-    category: 'Education',
-    caption: 'Our village learning centre brings modern education to children who would otherwise walk miles to school.',
-  },
-  {
-    id: 11,
-    src:    '/assets/images/media__1774419441476.jpg',
-    thumb:  '/assets/images/media__1774419441476.jpg',
-    title:  'Resident Yoga & Wellness',
-    category: 'Ashram Life',
-    caption: 'Daily yoga and wellness sessions keep our elderly residents active, healthy, and full of vitality.',
-  },
-  {
-    id: 12,
     src:    '/assets/images/media__1774419441495.jpg',
     thumb:  '/assets/images/media__1774419441495.jpg',
-    title:  'Community Kitchen',
-    category: 'Community Service',
-    caption: 'The heart of our ashram — the community kitchen — where meals are prepared with love and devotion.',
+    title:  'Celebrating Life',
+    caption: 'Birthday celebrations and joyous moments bring light and happiness to the ashram.',
   },
 ];
 
-const categories = ['All', ...new Set(galleryImages.map(i => i.category))];
-
 export default function Gallery() {
-  const [activeCategory, setActiveCategory] = useState('All');
   const [lightboxIdx, setLightboxIdx] = useState(null);
-
-  const filtered = activeCategory === 'All'
-    ? galleryImages
-    : galleryImages.filter(i => i.category === activeCategory);
 
   const openLightbox  = (globalIdx) => setLightboxIdx(globalIdx);
   const closeLightbox = () => setLightboxIdx(null);
 
-  const prev = () => setLightboxIdx(i => (i - 1 + filtered.length) % filtered.length);
-  const next = () => setLightboxIdx(i => (i + 1) % filtered.length);
+  const prev = () => setLightboxIdx(i => (i - 1 + galleryImages.length) % galleryImages.length);
+  const next = () => setLightboxIdx(i => (i + 1) % galleryImages.length);
 
   // Key navigation
   const handleKey = (e) => {
@@ -146,26 +106,13 @@ export default function Gallery() {
         </div>
       </section>
 
-      {/* Filter */}
-      <section className="gallery-filter-bar">
-        <div className="container gallery-filter-inner">
-          {categories.map(cat => (
-            <button
-              key={cat}
-              className={`filter-btn ${activeCategory === cat ? 'active' : ''}`}
-              onClick={() => setActiveCategory(cat)}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-      </section>
+
 
       {/* Grid */}
       <section className="section gallery-grid-section">
         <div className="container">
           <div className="gallery-grid">
-            {filtered.map((img, idx) => (
+            {galleryImages.map((img, idx) => (
               <div
                 className="gallery-item"
                 key={img.id}
@@ -176,7 +123,6 @@ export default function Gallery() {
               >
                 <img src={img.thumb} alt={img.title} loading="lazy" />
                 <div className="gallery-overlay">
-                  <span className="gallery-category">{img.category}</span>
                   <h4>{img.title}</h4>
                   <p>{img.caption}</p>
                 </div>
@@ -204,11 +150,10 @@ export default function Gallery() {
             <FiChevronLeft size={28} />
           </button>
           <div className="lightbox-content" onClick={e => e.stopPropagation()}>
-            <img src={filtered[lightboxIdx].src} alt={filtered[lightboxIdx].title} />
+            <img src={galleryImages[lightboxIdx].src} alt={galleryImages[lightboxIdx].title} />
             <div className="lightbox-caption">
-              <span className="gallery-category">{filtered[lightboxIdx].category}</span>
-              <h3>{filtered[lightboxIdx].title}</h3>
-              <p>{filtered[lightboxIdx].caption}</p>
+              <h3>{galleryImages[lightboxIdx].title}</h3>
+              <p>{galleryImages[lightboxIdx].caption}</p>
             </div>
           </div>
           <button className="lightbox-next" onClick={e => { e.stopPropagation(); next(); }}>

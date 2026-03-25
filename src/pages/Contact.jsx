@@ -19,7 +19,8 @@ const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // e.g. 'template_xyz456'
 const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';   // From Account > General
 
 const CONTACT_EMAIL = 'venkateshwaraeducationaltrust@gmail.com';
-const CONTACT_PHONE = '+91 00000 00000';
+const CONTACT_PHONE_1 = '+91 85531 82800';
+const CONTACT_PHONE_2 = '+91 89713 79711';
 const CONTACT_ADDRESS = '[Full Address], [City], [State] — [PIN Code]';
 
 async function sendViaEmailJS(formData) {
@@ -142,7 +143,9 @@ export default function Contact() {
                 <div className="contact-card-icon"><FiPhone size={20} /></div>
                 <div>
                   <h4>Phone</h4>
-                  <a href={`tel:${CONTACT_PHONE.replace(/\s/g,'')}`}>{CONTACT_PHONE}</a>
+                  <a href={`tel:${CONTACT_PHONE_1.replace(/\s/g,'')}`}>{CONTACT_PHONE_1}</a>
+                  <br />
+                  <a href={`tel:${CONTACT_PHONE_2.replace(/\s/g,'')}`}>{CONTACT_PHONE_2}</a>
                 </div>
               </div>
               <div className="contact-card">
