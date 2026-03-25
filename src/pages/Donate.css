@@ -1,0 +1,419 @@
+/* ─── Impact Banner ─── */
+.impact-banner {
+  background: var(--gold-pale);
+  border-top: 3px solid var(--gold);
+  border-bottom: 3px solid var(--gold);
+  padding: 2rem 0;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.impact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1rem 1.25rem;
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  border: var(--border-warm);
+  transition: var(--transition);
+}
+
+.impact-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-warm);
+}
+
+.impact-amount {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--saffron);
+  line-height: 1;
+}
+
+.impact-text {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ─── Payment Section ─── */
+.payment-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.payment-main {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  border: var(--border-warm);
+  box-shadow: var(--shadow-warm);
+}
+
+.payment-main h2 { margin-bottom: 0.25rem; }
+
+/* ─── Tabs ─── */
+.payment-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  background: var(--cream-dark);
+  padding: 0.4rem;
+  border-radius: var(--radius-sm);
+  width: fit-content;
+}
+
+.tab-btn {
+  padding: 0.6rem 1.4rem;
+  border: none;
+  background: transparent;
+  border-radius: calc(var(--radius-sm) - 2px);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.tab-btn.active {
+  background: var(--white);
+  color: var(--saffron);
+  box-shadow: 0 2px 12px rgba(42,35,24,0.1);
+}
+
+/* ─── Tab Content ─── */
+.tab-content {
+  animation: fadeIn 0.3s ease;
+}
+
+/* ─── UPI ─── */
+.upi-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.qr-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.qr-img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border: 2px solid var(--gold);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem;
+}
+
+.qr-placeholder {
+  width: 180px;
+  height: 180px;
+  border: 2px dashed var(--gold);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  text-align: center;
+  padding: 1rem;
+  background: var(--gold-pale);
+}
+
+.qr-placeholder span { font-size: 2rem; }
+.qr-placeholder p { font-size: 0.85rem; font-weight: 600; color: var(--charcoal-mid); }
+.qr-placeholder small { font-size: 0.72rem; color: var(--text-muted); }
+.qr-placeholder code { color: var(--saffron-dark); }
+
+.qr-hint { font-size: 0.78rem; color: var(--text-muted); text-align: center; }
+
+.upi-details h3 { margin-bottom: 0.75rem; font-size: 1.2rem; }
+.upi-desc { font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem; }
+
+/* ─── Detail Rows ─── */
+.detail-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid rgba(201,168,76,0.2);
+  gap: 1rem;
+}
+
+.detail-row:last-child { border-bottom: none; }
+
+.detail-row.highlighted {
+  background: var(--gold-pale);
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--gold);
+  margin-bottom: 1.5rem;
+}
+
+.detail-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  flex-shrink: 0;
+  min-width: 130px;
+}
+
+.detail-value-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.detail-value {
+  font-size: 0.92rem;
+  color: var(--charcoal);
+  font-weight: 500;
+}
+
+.detail-value.upi-id {
+  font-family: monospace;
+  font-size: 1rem;
+  color: var(--saffron-dark);
+  font-weight: 700;
+}
+
+.copy-btn {
+  background: var(--cream-dark);
+  border: 1px solid rgba(201,168,76,0.3);
+  border-radius: 4px;
+  padding: 0.3rem 0.45rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+}
+
+.copy-btn:hover {
+  background: var(--saffron);
+  color: var(--white);
+  border-color: transparent;
+}
+
+/* ─── UPI Apps ─── */
+.upi-apps {
+  margin-top: 0.5rem;
+}
+
+.upi-apps-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.upi-app-list {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.upi-app-tag {
+  font-size: 0.75rem;
+  background: var(--cream-dark);
+  color: var(--charcoal-mid);
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  border: 1px solid rgba(201,168,76,0.25);
+}
+
+/* ─── Bank Details ─── */
+.bank-details-card {
+  background: var(--cream-dark);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: var(--border-warm);
+  margin-bottom: 1.5rem;
+}
+
+.bank-instructions {
+  background: var(--gold-pale);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem 1.5rem;
+  border: 1px solid rgba(201,168,76,0.3);
+  margin-bottom: 1rem;
+}
+
+.bank-instructions h4 {
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  color: var(--charcoal);
+}
+
+.bank-instructions ol {
+  padding-left: 1.2rem;
+}
+
+.bank-instructions li {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 0.35rem;
+}
+
+/* ─── Payment Note ─── */
+.payment-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.85rem 1rem;
+  background: rgba(200,98,42,0.07);
+  border-left: 3px solid var(--saffron);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-top: 1rem;
+}
+
+.payment-note svg { color: var(--saffron); flex-shrink: 0; margin-top: 2px; }
+
+.payment-note span {
+  font-size: 0.85rem;
+  color: var(--charcoal-mid);
+  line-height: 1.55;
+}
+
+/* ─── Sidebar ─── */
+.payment-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.sidebar-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  border: var(--border-warm);
+  box-shadow: var(--shadow-warm);
+}
+
+.sidebar-card-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+  display: block;
+  color: var(--saffron);
+}
+
+.sidebar-card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--charcoal);
+}
+
+.sidebar-card p {
+  font-size: 0.87rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.tax-note {
+  margin-top: 0.75rem !important;
+  font-size: 0.82rem !important;
+  color: var(--charcoal-mid) !important;
+  background: var(--cream-dark);
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  border: var(--border-warm);
+  line-height: 1.8 !important;
+}
+
+.other-ways {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.other-ways li {
+  font-size: 0.87rem;
+  color: var(--text-muted);
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(201,168,76,0.12);
+}
+
+.sidebar-quote {
+  background: var(--charcoal);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+}
+
+.sidebar-quote blockquote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.sidebar-quote cite {
+  font-size: 0.78rem;
+  color: var(--gold);
+  font-style: normal;
+  letter-spacing: 0.05em;
+}
+
+/* ─── Gratitude ─── */
+.gratitude-section {
+  background: var(--cream-dark);
+  border-top: 3px solid var(--gold);
+  padding: 4rem 0;
+}
+
+.gratitude-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gratitude-icon {
+  color: var(--saffron);
+  margin-bottom: 1.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gratitude-inner h2 { margin-bottom: 1rem; }
+.gratitude-inner p { color: var(--text-muted); line-height: 1.8; }
+
+/* ─── Responsive ─── */
+@media (max-width: 1024px) {
+  .payment-layout { grid-template-columns: 1fr; }
+  .payment-sidebar { flex-direction: row; flex-wrap: wrap; }
+  .sidebar-card { flex: 1; min-width: 260px; }
+  .sidebar-quote { width: 100%; }
+}
+
+@media (max-width: 768px) {
+  .impact-grid { grid-template-columns: repeat(2, 1fr); }
+  .upi-layout { grid-template-columns: 1fr; }
+  .qr-block { flex-direction: row; align-items: flex-start; }
+  .payment-sidebar { flex-direction: column; }
+}
+
+@media (max-width: 480px) {
+  .impact-grid { grid-template-columns: 1fr; }
+  .payment-tabs { width: 100%; }
+  .tab-btn { flex: 1; text-align: center; }
+}
