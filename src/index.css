@@ -54,6 +54,7 @@ body {
   background-color: var(--cream);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 /* ─── Typography ─── */

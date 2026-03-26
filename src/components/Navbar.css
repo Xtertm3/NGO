@@ -157,9 +157,8 @@
   display: none;
   flex-direction: column;
   gap: 0.25rem;
-  padding: 1rem 1.5rem 1.5rem;
+  padding: 0 1.5rem;
   background: var(--cream);
-  border-top: var(--border-warm);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease, padding 0.3s ease;
@@ -168,6 +167,7 @@
 .mobile-drawer.open {
   max-height: 500px;
   padding: 1rem 1.5rem 1.5rem;
+  border-top: var(--border-warm);
 }
 
 .mobile-link {
@@ -189,8 +189,13 @@
 
 /* ─── Responsive ─── */
 @media (max-width: 900px) {
+  .navbar-inner { justify-content: space-between; gap: 1rem; }
+  .navbar-logo { min-width: 0; overflow: hidden; flex: 1; }
+  .logo-text { overflow: hidden; }
+  .logo-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .logo-sub { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .navbar-links { display: none; }
   .navbar-cta   { display: none; }
-  .hamburger    { display: flex; margin-left: auto; }
+  .hamburger    { display: flex; flex-shrink: 0; }
   .mobile-drawer { display: flex; }
 }
