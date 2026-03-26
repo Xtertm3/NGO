@@ -462,3 +462,39 @@
   .photo-strip img:nth-child(3) { display: none; }
   .hero-content { max-width: 100%; }
 }
+
+@media (max-width: 480px) {
+  .hero-title { 
+    font-size: 2.2rem; 
+    line-height: 1.25; 
+  }
+  .hero-actions { 
+    flex-direction: column; 
+    width: 100%; 
+  }
+  .hero-actions > * { 
+    width: 100%; 
+    justify-content: center; 
+  }
+  .stats-grid { 
+    grid-template-columns: 1fr; 
+  }
+  .stat-item { 
+    border-right: none !important; 
+    padding: 1.25rem 1rem; 
+  }
+  .about-snippet-actions {
+    flex-direction: column;
+  }
+  .about-snippet-actions > * {
+    width: 100%;
+    justify-content: center;
+  }
+  .donate-cta-actions {
+    flex-direction: column;
+  }
+  .donate-cta-actions > * {
+    width: 100%;
+    justify-content: center;
+  }
+}
