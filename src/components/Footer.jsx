@@ -58,7 +58,7 @@ export default function Footer() {
             <ul className="footer-contact">
               <li>
                 <FiMapPin size={15} />
-                <span>[Address Line 1], [City], [State] — [PIN]</span>
+                <span>Thirumala Resort, Near Thirumala Conventional Hall, Soukya Road, Thirumalashettyhalli Cross, Hoskote, Bangalore Rural District, 560067</span>
               </li>
               <li>
                 <FiPhone size={15} />

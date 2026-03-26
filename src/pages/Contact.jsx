@@ -21,7 +21,7 @@ const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';   // From Account > General
 const CONTACT_EMAIL = 'venkateshwaraeducationaltrust@gmail.com';
 const CONTACT_PHONE_1 = '+91 85531 82800';
 const CONTACT_PHONE_2 = '+91 89713 79711';
-const CONTACT_ADDRESS = '[Full Address], [City], [State] — [PIN Code]';
+const CONTACT_ADDRESS = 'Thirumala Resort, Near Thirumala Conventional Hall, Soukya Road, Thirumalashettyhalli Cross, Hoskote, Bangalore Rural District, 560067';
 
 async function sendViaEmailJS(formData) {
   /* Dynamic import keeps bundle lean */
@@ -306,18 +306,18 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map Placeholder */}
+      {/* Full Width Map */}
       <section className="map-section">
-        <div className="map-placeholder">
-          <div className="map-placeholder-inner">
-            <FiMapPin size={32} />
-            <h4>Find Us on the Map</h4>
-            <p>Replace this placeholder with a Google Maps embed</p>
-            <code>
-              {'<iframe src="https://maps.google.com/maps?q=YOUR+ADDRESS&output=embed" .../>'}
-            </code>
-          </div>
-        </div>
+        <iframe 
+          src="https://maps.google.com/maps?q=Thirumala%20Resort,%20Near%20Thirumala%20Conventional%20Hall,%20Hoskote,%20Bangalore&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+          width="100%" 
+          height="450" 
+          style={{ border: 0, display: 'block', backgroundColor: '#e5e3df' }} 
+          allowFullScreen="" 
+          loading="lazy" 
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Trust Location Map"
+        ></iframe>
       </section>
     </div>
   );

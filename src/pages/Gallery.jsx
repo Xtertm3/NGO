@@ -130,13 +130,7 @@ export default function Gallery() {
             ))}
           </div>
 
-          {/* Upload note */}
-          <div className="gallery-upload-note">
-            <span>📸</span>
-            <p>
-              <strong>Add Your Photos:</strong> Replace the placeholder images by updating the <code>galleryImages</code> array in <code>src/pages/Gallery.jsx</code> with your own image URLs or local imports.
-            </p>
-          </div>
+
         </div>
       </section>
 

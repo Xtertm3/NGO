@@ -12,9 +12,9 @@ const IMG3       = '/assets/images/media__1774419441217.jpg';
 
 const stats = [
   { icon: <FiUsers />, number: '500+', label: 'Elderly Residents Served' },
-  { icon: <FiBookOpen />, number: '1,200+', label: 'Students Educated' },
+  { icon: <FiStar />, number: '10,000+', label: 'Women Empowered' },
   { icon: <FiHome />, number: '3', label: 'Ashram Centres' },
-  { icon: <FiAward />, number: '15+', label: 'Years of Seva' },
+  { icon: <FiAward />, number: '12+', label: 'Years of Seva' },
 ];
 
 const programs = [
